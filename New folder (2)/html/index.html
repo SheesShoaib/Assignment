@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Shees's Project</title>
+    <!-- Box icons links -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Remix icons links -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="/Assest/logo.png" alt="">
+        </a>
+        <ul class="navbar">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Snkrs</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-img">
+            <img src="/Assest/hero1.png" class="shoes-img">
+        </div>
+        <div class="hero-text">
+            <h1> Nike Air<br>Dunk-270</h1>
+            <p>
+                Nike's 1st lifestyle air max returns with a vibrant color gradient
+                thats sure to turn heads vibrants color gradients thats sure to turn heads.
+            </p>
+            <h5>$270.00</h5>
+            <div class="hero-btnn">
+                <a href="#" class="btn">Add to bag </a>
+                <a href="#" class="btn2"> View Details </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="content">
+        <div class="Box">
+            <li><img src="/Assest/p1.png" onclick="slider('/Assest/hero1.png')"></li>
+        </div>
+
+        <div class="Box">
+            <li><img src="/Assest/p2.png" onclick="slider('/Assest/hero2.png')"></li>
+        </div>
+
+        <div class="Box">
+            <li><img src="/Assest/p3.png" onclick="slider('/Assest/hero1.png')"></li>
+        </div>
+
+    </div>
+
+
+
+
+    <a href="#" class="scroll"><i class="ri-scroll-to-bottom-line"></i></a>
+
+
+    <!-- <div class="footer">
+        <a href="#">Products</a>
+        <a href="#">Contact us</a>
+        <a href="#">Place Your Order</a>
+        <a href="#">Cancle Your Order</a>
+
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ipsum id veniam? Reprehenderit deleniti aut
+            ea, ipsam quod mollitia corrupti saepe, quibusdam temporibus nemo maiores dolore doloribus? A, aut. Ducimus
+            adipisci excepturi tempore distinctio, consequuntur, accusantium officiis ad consectetur in quaerat
+            temporibus ipsum nesciunt provident enim quisquam maxime qui et!</p>
+
+            <div class="feedback">
+                Feedback here 
+                <input type="text"> <button>Submit</button>
+            </div>
+    </div> -->
+
+
+
+
+
+
+
+    <script>
+        function slider(anything) {
+            document.querySelector('.shoes-img').src = anything;
+        };
+
+
+
+
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        };
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    </script>
+
+
+
+</body>
+
+</html>
